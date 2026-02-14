@@ -1,0 +1,6 @@
+cask "jellyfin"
+cask "ledger-wallet"
+cask "nextcloud"
+cask "protonvpn"
+cask "tor-browser"
+cask "transmission"

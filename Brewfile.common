@@ -1,0 +1,8 @@
+brew "chezmoi"
+brew "curl"
+brew "git"
+cask "firefox"
+cask "iterm2"
+cask "raycast"
+cask "vlc"
+cask "zed"

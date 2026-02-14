@@ -1,0 +1,19 @@
+[init]
+  defaultBranch = main
+[user]
+	name = {{ .git.name }}
+	email = {{ .git.email }}
+[alias]
+	br = branch
+	co = checkout
+	cp = cherrypick
+	ci = commit
+	rb = rebase
+	st = status
+	diffc = diff --cached
+	lg = log --oneline --graph --decorate --all
+	rs = "!f()  { git reset --soft HEAD~\"${1:-1}\"; }; f"
+	rh = "!f()  { git reset --hard HEAD~\"${1:-1}\"; }; f"
+	fu = "!f()  { git commit --no-verify --fixup=\"$1\"; }; f"
+	as = "!f()  { git rebase --autosquash HEAD~\"$1\"; }; f"
+	rbi = "!f() { git rebase -i HEAD~\"${1:-2}\"; }; f"

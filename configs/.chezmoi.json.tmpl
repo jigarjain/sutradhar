@@ -1,0 +1,22 @@
+{{- $gitName := promptStringOnce . "git.name" "Git: author name (Jigar Jain)" | default "Jigar Jain" -}}
+{{- $gitEmail := promptStringOnce . "git.email" "Git: author email (4211882+jigarjain@users.noreply.github.com)" | default "4211882+jigarjain@users.noreply.github.com" -}}
+
+{{- $zedFormatOnSave := promptStringOnce . "zed.format_on_save" "Zed: format_on_save (on / off)" | default "on" -}}
+{{- $zedTheme := promptStringOnce . "zed.theme" "Zed: theme (Ayu Dark / Gruvbox Dark Hard)" | default "Ayu Dark" -}}
+{{- $zedTabSize := promptIntOnce . "zed.tab_size" "Zed: tab_size (2 / 4)" | default 2 -}}
+{{- $zedWrapGuide := promptIntOnce . "zed.wrap_guide" "Zed: wrap_guide (80 / 115)" | default 80 -}}
+
+{
+  "data": {
+    "git": {
+      "name": {{ $gitName | title | toJson }},
+      "email": {{ $gitEmail | lower | toJson }}
+    },
+    "zed": {
+      "format_on_save": {{ $zedFormatOnSave | lower | toJson }},
+      "wrap_guides": {{ $zedWrapGuide }},
+      "tab_size": {{ $zedTabSize }},
+      "theme": {{ $zedTheme | title | toJson }}
+    }
+  }
+}
