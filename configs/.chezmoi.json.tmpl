@@ -18,5 +18,6 @@
       "tab_size": {{ $zedTabSize }},
       "theme": {{ $zedTheme | title | toJson }}
     }
-  }
+  },
+  "sourceDir": {{ joinPath .chezmoi.homeDir "Code" "sutradhar" | toJson }}
 }
