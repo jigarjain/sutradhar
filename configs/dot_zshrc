@@ -79,6 +79,9 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(chezmoi zsh-syntax-highlighting)
 
+# Move zcompdump* files to .cache folder to reduce pollution in home directory
+export ZSH_COMPDUMP="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/.zcompdump-${HOST}"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
