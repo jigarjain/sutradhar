@@ -115,7 +115,7 @@ LESSHISTFILE="-"
 # For a full list of active aliases, run `alias`.
 
 # ZSH
-alias zshconfig="zed ~/.zshrc"
+alias zshconfig="chezmoi edit --apply ~/.zshrc"
 alias zshalias="zed ~/.config/zsh/aliases"
 alias zshpath="zed ~/.config/zsh/path"
 alias zload="source ~/.zshrc"
