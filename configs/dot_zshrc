@@ -115,7 +115,6 @@ LESSHISTFILE="-"
 # For a full list of active aliases, run `alias`.
 
 # ZSH
-alias ohmyzsh="zed ~/.oh-my-zsh"
 alias zshconfig="zed ~/.zshrc"
 alias zshalias="zed ~/.config/zsh/aliases"
 alias zshpath="zed ~/.config/zsh/path"
