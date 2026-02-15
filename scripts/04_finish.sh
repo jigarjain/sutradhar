@@ -14,9 +14,8 @@ make_folders() {
 show_instructions() {
   echo "📋 Next steps for you."
   echo ""
-  echo "👉 [Powerlevel10K]   Run "p10k configure" to install fonts & configure Powerlevel10K theme."
-  echo "👉 [iterm2]          Load settings from ~/.config/iterm2 (iterm2 Settings > General > Settings)."
-  echo "👉 [Config]          Inspect your configuration files."
+  echo "👉 [iterm2]   Load settings from ~/.config/iterm2 (iterm2 Settings > General > Settings)."
+  echo "👉 [Config]   Inspect your configuration files."
 }
 
 main() {
