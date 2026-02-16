@@ -116,9 +116,10 @@ LESSHISTFILE="-"
 
 # ZSH
 alias zshconfig="chezmoi edit --apply ~/.zshrc"
-alias zshalias="zed ~/.config/zsh/aliases"
-alias zshpath="zed ~/.config/zsh/path"
-alias zload="source ~/.zshrc"
+alias zshprofile="chezmoi edit --apply ~/.zprofile"
+alias zshalias="zed ~/.config/zsh/aliases.zsh"
+alias zshpath="zed ~/.config/zsh/paths.zsh"
+alias zload="source ~/.zprofile && source ~/.zshrc"
 
 # Python
 alias pip=pip3
