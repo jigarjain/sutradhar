@@ -129,7 +129,7 @@ dlogin() { docker exec -it $1 bash }
 dlogs() { docker logs -f -t $1 }
 
 # Custom Aliases (specific to work/personal profile)
-local a="$HOME/.config/zsh/aliases"
+local a="$HOME/.config/zsh/aliases.zsh"
 [[ -f "$a" ]] && source "$a"
 
 # To update $PATH, see ~/.zprofile

@@ -8,5 +8,5 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$HOME/Library/Python/3.9/bin:$PATH # Python
 
 ## Custom PATH (specific to work/personal profile)
-local p="$HOME/.config/zsh/paths"
+local p="$HOME/.config/zsh/paths.zsh"
 [[ -f "$p" ]] && source "$p"
