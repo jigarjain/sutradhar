@@ -1,3 +1,2 @@
 brew "awscli"
-brew "nvm"
 cask "docker-desktop"
